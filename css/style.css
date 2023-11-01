@@ -1,0 +1,492 @@
+/* ======Common CSS Starts====== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 0.8px;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+/* body{
+    background: #E5E5E5;
+} */
+/* ======Common CSS Ends====== */
+/* ======Navbar CSS Starts====== */
+.nav-item{
+    position: relative;
+    color: #000;
+    font-family: Gupter;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.34px;
+    transition: all linear 0.3s;
+}
+.nav-item::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #000;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+.nav-item:hover.nav-item::after{
+    opacity: 1;
+    width: 100%;
+}
+.my_nav ul{
+    gap: 47px;
+}
+.nav_contact{
+    display: flex;
+    gap: 39px;
+}
+.nav_contact a{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 1);
+}
+
+/* ======Navbar CSS Ends====== */
+/* ======Banner CSS Starts====== */
+#banner{
+    padding: 82px 0;
+}
+.banner_left h1{
+    color: #292019;
+    font-family: Habibi;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 76px;
+    letter-spacing: 1.3px;
+}
+.banner_left p{
+    margin: 43px 0;
+    width: 471px;
+    color: #000;
+    font-family: Habibi;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    letter-spacing: 0.4px;
+}
+.banner_btn{
+    display: flex;
+    gap: 33px;
+}
+.banner_btn a{
+    padding: 30px 70px;
+    color: #C4A586;
+    font-family: Gupter;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: normal;
+    letter-spacing: 0.54px;
+    border: 2px solid #C4A586;
+    transition: all linear 0.3s;
+}
+.banner_btn a:hover{
+    background: #C4A586;
+    color: #fff;
+}
+/* ======Banner CSS Ends====== */
+/* ======Client CSS Starts====== */
+.client_head h3{
+    text-align: center;
+    color: #000;
+    font-family: Gupter;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.46px;
+    margin-bottom: 96px;
+}
+.client_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 76px;
+}
+.client_wrap a{
+    color: var(--Grayes, #72696A);
+    font-family: Gupter;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.9px;
+}
+.collection_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+.collection_item{
+    width: 558px;
+    display: flex;
+    justify-content: space-between;
+    transition: all linear 0.3s;
+}
+.collection_item:hover{
+    background-color: #C4A586;
+}
+.collection_item:hover .collection_head a{
+    color: #fff;
+} 
+.collection_head h4{
+    color: #000;
+    font-family: Gupter;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.collection_head a{
+    color: var(--Pich, #C4A586);
+    font-family: Gupter;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    transition: all linear 0.3s;
+}
+/* ======Client CSS Ends====== */
+/* ======Product CSS Starts====== */
+.product_head h3{
+    color: #000;
+    font-family: Gupter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+.product_list{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.product_list a{
+    color: #000;
+    font-family: Gupter;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.5px;
+}
+.product_link{
+    color: var(--Pich, #C4A586);
+    font-family: Gupter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+.product_wrap{
+    margin-top: 105px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.product_item{
+    position: relative;
+    width: 352px;
+    height: 302.86px;
+    background: rgba(196, 165, 134, 0.63);
+    margin-bottom: 270px;
+    transition: all linear 0.3s;
+}
+.product_item:hover{
+    margin-top: -30px;
+}
+.product_item h4{
+    margin: 36px 0 0 84px;
+    color: #000;
+    font-family: Habibi;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 76px; /* 345.455% */
+    letter-spacing: 0.44px;
+}
+.product_cost{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+.product_cart{
+    position: absolute;
+    top: -35px;
+    left: 25%;
+    width: 208.465px;
+    height: 68.345px;
+    border-radius: 25px;
+    background: #D1A070;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.product_cart span{
+    color: #000;
+    font-family: Gupter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+.product_cart a{
+    color: rgba(114, 105, 106, 1);
+    font-size: 18px;
+}
+.product_img{
+    position: absolute;
+    bottom: -250px;
+    left: 15%;
+}
+.product_img1{
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    bottom: -210px;
+    left: 15%;
+}
+/* ======Product CSS Ends====== */
+/* ======Review CSS Starts====== */
+.review_wrap{
+    margin: 95px 0 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.comment{
+    margin: 70px 0 0 100px;
+}
+.comment h3{
+    color: #000;
+    font-family: Gupter;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: normal;
+}
+.comment p{
+    margin: 30px 0 95px 0;
+    color: #000;
+    font-family: Habibi;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+}
+.rating{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.name h4{
+    color: #000;
+    font-family: Gupter;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.44px;
+}
+.name h5{
+    color: #000;
+    font-family: Habibi;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 76px;
+    letter-spacing: 0.34px;
+}
+.rating span{
+    margin-top: -80px;
+    color: #C4A586;
+}
+.review_btn{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.review_btn a{
+    width: 33px;
+    height: 33px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    transition: all linear 0.3s;
+}
+.review_btn a:hover{
+    color: #fff;
+    background: #b99272;
+    border: 2px solid #b99272;
+}
+.customer_wrap{
+    margin-left: 350px;
+    display: flex;
+    gap: 37px;
+}
+/* ======Review CSS Ends====== */
+/* ======Notification CSS Starts====== */
+#notification{
+    margin: 95px 0;
+}
+.notification_wrap{
+    display: flex;
+    gap: 85px;
+    flex-wrap: wrap;
+}
+.notification_item{
+    margin-top: 60px;
+}
+.interior{
+    color: var(--Pich, #C4A586);
+    font-family: Gupter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 15px 30px;
+    border: 1px solid #C4A586;
+    border-radius: 30px;
+    letter-spacing: 0.32px;
+}
+.notification_item h3{
+    margin-top: 25px;
+    width: 349px;
+    color: #000;
+    font-family: Gupter;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 39px; /* 130% */
+    letter-spacing: 0.6px;
+}
+form{
+    position: relative;
+}
+input{
+    margin-top: 10px;
+    padding-left:20px;
+    width: 492px;
+    height: 78px;
+    border-radius: 13px;
+    border: none;
+    background: rgba(217, 217, 217, 0.51);
+    color: #000;
+    font-family: Gupter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+.form_btn{
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    display: flex;
+}
+.form_btn a{
+    padding: 23px 35px;
+    border-radius: 13px 0px 0px 13px;
+    background: var(--Pich, #C4A586);
+    color: #FFF;
+    font-family: Gupter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+.form_btn i{
+    font-size: 20px;
+    padding: 23px 28px;
+    background: #eac9a9;
+}
+.notification_item2{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+.notification_item2 a{
+    color: #000;
+    font-family: Gupter;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.38px;
+    padding-bottom: 35px;
+}
+/* ======Notification CSS Ends====== */
+/* ======Footer CSS Starts====== */
+.footer_nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+.footer_wrap{
+    margin-top: 16px;
+    display: flex;
+    gap: 47px;
+}
+.foot_item{
+    position: relative;
+    color: #000;
+    font-family: Gupter;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.34px;
+    transition: all linear 0.3s;
+}
+.foot_item::after{
+    position: absolute;
+    content: "";
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #000;
+    opacity: 1;
+    transition: all linear 0.3s;
+}
+.foot_item:hover.foot_item::after{
+    opacity: 1;
+    width: 100%;
+}
+.footer_contact{
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+}
+.footer_contact a{
+    font-size: 15px;
+    color: #C4A586;
+}
+.footer_bottom{
+    margin-top: 22px;
+    border-top: 1px solid #72696a63;
+    padding: 40px;
+    text-align: center;
+}
+.footer_bottom p{
+    color: #000;
+    font-family: Gupter;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.34px;
+}
+.footer_bottom span{
+    color: #C4A586;
+}
+/* ======Footer CSS Ends====== */
